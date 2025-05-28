@@ -1,0 +1,14 @@
+  [build]
+  command = "bun run build"  # Comando para gerar o build
+  publish = "dist"  # Diretório onde Netlify busca os arquivos para publicação
+  functions = "netlify/functions"  # Diretório onde estão as funções Lambda
+
+[[headers]]
+  for = "/itclogo.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[redirects]]
+  from = "/itclogo.png"
+  to = "/public/itclogo.png"
+  status = 200
