@@ -52,7 +52,7 @@ const Apresentacao = ({ onProsseguir }: ApresentacaoProps) => {
         {/* Apenas um apoio agora */}
         <div className="mt-6 text-center">
           <p className="text-xs sm:text-sm font-bold text-gray-600">APOIO:</p>
-<img src="https://drive.google.com/file/d/1VmDK9gvm94cELMC9M5PjnwvQX52ra-t9/view?usp=sharing" alt="Logo de apoio" className="mx-auto mt-2 w-20 sm:w-24 h-auto" />
+<img src="https://i.ibb.co/wrLj5qLv/itclogo.png" alt="Logo de apoio" className="mx-auto mt-2 w-20 sm:w-24 h-auto" />
 
 
         </div>
