@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import Logo from './Logo';
+
 
 interface ApresentacaoProps {
   onProsseguir: () => void;
