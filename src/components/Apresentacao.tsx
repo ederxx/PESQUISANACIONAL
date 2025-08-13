@@ -11,11 +11,9 @@ const Apresentacao = ({ onProsseguir }: ApresentacaoProps) => {
     <div className="min-h-screen bg-gradient-to-br from-green-100 to-white flex flex-col items-center justify-center px-4 sm:px-6">
       <div className="max-w-xl w-full text-center">
         <h1 className="text-lg sm:text-xl font-bold text-green-700 mb-2">
-          Campanha: Pesquisa Cannabis Medicinal
+    Enquete Nacional sobre o Uso Terapêutico da Cannabis
         </h1>
-        <h2 className="text-sm sm:text-md font-semibold text-gray-800 mb-4 leading-tight">
-          Enquete Nacional sobre o Uso Terapêutico da Cannabis
-        </h2>
+       
 
         <Card className="shadow-lg border border-green-200 rounded-lg">
           <CardContent className="p-3 sm:p-4">
