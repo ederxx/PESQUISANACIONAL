@@ -1,25 +1,15 @@
 import { useState } from 'react';
 import Apresentacao from '../components/Apresentacao';
-import ModalTCLE from '../components/ModalTCLE';
 import Formulario from '../components/formulario/Formulario';
 import Dashboard from '../components/Dashboard';
 
 const Index = () => {
   const [currentStep, setCurrentStep] = useState('apresentacao');
-  const [showModal, setShowModal] = useState(false);
   const [respostasFormulario, setRespostasFormulario] = useState({});
 
   const handleProsseguir = () => {
-    setShowModal(true); // Abre o modal
+    window.location.href = "https://docs.google.com/forms/d/1hBXDxgoyUhHt6JRpRmuOay1frwRsHn_s3hGoz5SuSJ8/viewform?edit_requested=true";
   };
-
-  const handleConsentimento = (concordou: boolean) => {
-    setShowModal(false);
-    if (concordou) {
-      window.location.href = "https://docs.google.com/forms/d/1hBXDxgoyUhHt6JRpRmuOay1frwRsHn_s3hGoz5SuSJ8/viewform?edit_requested=true"; // Substitua pelo link correto do formulário
-    }
-  };
-  
 
   const handleFinalizarFormulario = (respostas: any) => {
     setRespostasFormulario(respostas);
@@ -37,7 +27,6 @@ const Index = () => {
         return (
           <div className="text-center">
             <Apresentacao onProsseguir={handleProsseguir} />
-            
           </div>
         );
       case 'formulario':
@@ -52,7 +41,6 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {renderContent()}
-      <ModalTCLE isOpen={showModal} onClose={() => setShowModal(false)} onConsentimento={handleConsentimento} />
     </div>
   );
 };
