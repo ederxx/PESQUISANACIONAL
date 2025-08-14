@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Logo from '../assets/itclogo.png';
 
 const Index = () => {
   const handleProsseguir = () => {
@@ -58,6 +59,15 @@ const Index = () => {
         <p className="text-sm sm:text-base text-gray-500 mt-4 text-center">
           Apoio:
         </p>
+             <div className="mt-4 flex justify-center">
+          <img
+            src={Logo}
+            alt="Logo de Apoio"
+            className="w-32 sm:w-48 h-auto object-contain"
+          />
+      
+        </div>
+        
       </div>
     </div>
   );
