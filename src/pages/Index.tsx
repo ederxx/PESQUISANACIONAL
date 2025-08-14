@@ -24,9 +24,9 @@ const Index = () => {
 
         <h2 className="text-xl sm:text-2xl font-semibold mt-8 mb-3">Por que participar?</h2>
         <ul className="list-disc list-inside mb-6 space-y-1 text-base sm:text-lg">
-          <li>Ajude a documentar a evolução dos tratamentos com cannabis ao longo do tempo</li>
-          <li>Suas respostas contribuirão para qualificar o atendimento de pacientes, terapeutas e médicos</li>
-          <li>Pode ser respondido pelo paciente ou por seu responsável</li>
+          <li>✔ Ajude a documentar a evolução dos tratamentos com cannabis ao longo do tempo</li>
+          <li>✔ Suas respostas contribuirão para qualificar o atendimento de pacientes, terapeutas e médicos</li>
+          <li>✔ Pode ser respondido pelo paciente ou por seu responsável</li>
         </ul>
 
         <h2 className="text-xl sm:text-2xl font-semibold mt-8 mb-3">Como funciona?</h2>
@@ -65,6 +65,9 @@ const Index = () => {
             alt="Logo de Apoio"
             className="w-32 sm:w-48 h-auto object-contain"
           />
+               <p className="mt-2 text-base sm:text-lg font-semibold text-gray-700 text-center">
+    Instituto Terapia Canábica
+  </p>
       
         </div>
         
