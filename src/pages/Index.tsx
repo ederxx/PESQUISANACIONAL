@@ -10,7 +10,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4 py-8">
+<div className="h-screen bg-gray-50 flex items-center justify-center px-4">
       <div className="w-full max-w-4xl bg-white rounded-lg shadow-lg p-6 sm:p-10">
         <h1 className="text-2xl sm:text-3xl font-bold mb-6 text-center">
           Enquete Nacional: Uso Terapêutico da Cannabis no Brasil
