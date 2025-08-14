@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Logo from '../assets/itclogo.png';
+import Logo from '../assets/logo.jpg';
 
 const Index = () => {
   const handleProsseguir = () => {
