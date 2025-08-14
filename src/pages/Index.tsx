@@ -65,7 +65,7 @@ const Index = () => {
             alt="Logo de Apoio"
             className="w-32 sm:w-48 h-auto object-contain"
           />
-               <p className="mt-2 text-base sm:text-lg font-semibold text-gray-700 text-center">
+  <p className="mt-2 text-base sm:text-lg font-semibold text-gray-700 text-center">
     Instituto Terapia Canábica
   </p>
       
