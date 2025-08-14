@@ -23,7 +23,7 @@ const Index = () => {
         </p>
 
         <h2 className="text-xl sm:text-2xl font-semibold mt-8 mb-3">Por que participar?</h2>
-        <ul className="list-disc list-inside mb-6 space-y-1 text-base sm:text-lg">
+<ul className="list-none mb-6 space-y-1 text-base sm:text-lg">
           <li>✔ Ajude a documentar a evolução dos tratamentos com cannabis ao longo do tempo</li>
           <li>✔ Suas respostas contribuirão para qualificar o atendimento de pacientes, terapeutas e médicos</li>
           <li>✔ Pode ser respondido pelo paciente ou por seu responsável</li>
