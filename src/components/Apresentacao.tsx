@@ -30,7 +30,7 @@ const Index = () => {
         </ul>
 
         <h2 className="text-xl sm:text-2xl font-semibold mt-8 mb-3">Como funciona?</h2>
-<ul style={{ listStyleType: 'none' }} className="mb-6 space-y-1 text-base sm:text-lg">
+<ul className="list-none mb-6 space-y-1 text-base sm:text-lg">
           <li>✔ Responda o formulário online rápido e anônimo</li>
           <li>✔ Pode ser preenchido mais de uma vez para registrar mudanças no tratamento</li>
           <li>✔ Seus dados são confidenciais e usados apenas para fins de pesquisa</li>
