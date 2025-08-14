@@ -1,62 +1,76 @@
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
+import { useState } from 'react';
+import Logo from '../assets/itclogo.png';
 
+const Index = () => {
+  const handleProsseguir = () => {
+    window.open(
+      "https://docs.google.com/forms/d/1hBXDxgoyUhHt6JRpRmuOay1frwRsHn_s3hGoz5SuSJ8/viewform?edit_requested=true",
+      "_blank"
+    );
+  };
 
-interface ApresentacaoProps {
-  onProsseguir: () => void;
-}
-
-const Apresentacao = ({ onProsseguir }: ApresentacaoProps) => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-100 to-white flex flex-col items-center justify-center px-4 sm:px-6">
-      <div className="max-w-xl w-full text-center">
-        <h1 className="text-lg sm:text-xl font-bold text-green-700 mb-2">
-    Enquete Nacional sobre o Uso Terapêutico da Cannabis
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4 py-8">
+      <div className="w-full max-w-4xl bg-white rounded-lg shadow-lg p-6 sm:p-10">
+        <h1 className="text-2xl sm:text-3xl font-bold mb-6 text-center">
+          Enquete Nacional: Uso Terapêutico da Cannabis no Brasil
         </h1>
-       
 
-        <Card className="shadow-lg border border-green-200 rounded-lg">
-          <CardContent className="p-3 sm:p-4">
-            <div className="max-h-64 sm:max-h-72 overflow-hidden text-sm sm:text-base text-gray-700 leading-relaxed">
-              <p className="mb-2">
-                O Instituto Terapeutas Cannabicos (ITC) apresenta um formulário eletrônico sobre o uso medicinal de produtos de Cannabis.
-              </p>
-              <p className="mb-2">
-                Ao preencher o formulário, você contribui para a pesquisa, registrando informações sobre o tratamento.
-              </p>
-              <p className="mb-2">
-                A enquete é conduzida por profissionais de saúde, pesquisadores e terapeutas.
-              </p>
-              <p className="mb-2">
-                Os dados fornecidos serão utilizados exclusivamente para qualificação dos tratamentos na rede de terapeutas.
-              </p>
-              <p className="text-center font-semibold text-green-700">
-                Muito obrigado!
-              </p>
-            </div>
+        <p className="mb-6 text-base sm:text-lg leading-relaxed">
+          Você ou alguém que você acompanha utiliza produtos à base de cannabis (como CBD, THC, outros canabinoides ou a planta integral) para tratamento de saúde?
+          <br />
+          Sua experiência é fundamental para melhorar o entendimento sobre esses tratamentos no Brasil!
+        </p>
 
-            <div className="text-center mt-4">
-              <Button 
-                onClick={onProsseguir}
-                size="lg"
-                className="bg-green-600 hover:bg-green-700 text-white px-5 sm:px-6 py-2 sm:py-3 text-sm sm:text-base font-semibold rounded-md shadow-md transition-all duration-200"
-              >
-                Prosseguir
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
+        <h2 className="text-xl sm:text-2xl font-semibold mt-8 mb-3">Por que participar?</h2>
+        <ul className="list-disc list-inside mb-6 space-y-1 text-base sm:text-lg">
+          <li>Ajude a documentar a evolução dos tratamentos com cannabis ao longo do tempo</li>
+          <li>Suas respostas contribuirão para qualificar o atendimento de pacientes, terapeutas e médicos</li>
+          <li>Pode ser respondido pelo paciente ou por seu responsável</li>
+        </ul>
 
-        {/* Apenas um apoio agora */}
-        <div className="mt-6 text-center">
-          <p className="text-xs sm:text-sm font-bold text-gray-600">APOIO:</p>
-<img src="https://i.ibb.co/wrLj5qLv/itclogo.png" alt="Logo de apoio" className="mx-auto mt-2 w-20 sm:w-24 h-auto" />
+        <h2 className="text-xl sm:text-2xl font-semibold mt-8 mb-3">Como funciona?</h2>
+        <ul className="list-disc list-inside mb-6 space-y-1 text-base sm:text-lg">
+          <li>✔ Responda o formulário online rápido e anônimo</li>
+          <li>✔ Pode ser preenchido mais de uma vez para registrar mudanças no tratamento</li>
+          <li>✔ Seus dados são confidenciais e usados apenas para fins de pesquisa</li>
+        </ul>
 
+        <p className="mb-6 text-base sm:text-lg">
+          A enquete é conduzida por uma equipe multiprofissional de saúde e pesquisa, comprometida com a melhoria dos tratamentos com cannabis no país.
+        </p>
 
+        <button
+          onClick={handleProsseguir}
+          className="w-full bg-green-600 text-white px-6 py-4 rounded-lg hover:bg-green-700 transition text-lg sm:text-xl font-semibold"
+        >
+          🔗 Participe agora
+        </button>
+
+        <p className="text-sm sm:text-base text-gray-600 mt-6 text-center">
+          Sua contribuição ajuda a construir um futuro com mais conhecimento e acesso à cannabis sativa!
+        </p>
+
+        <hr className="my-6" />
+        <p className="text-xs sm:text-sm text-gray-400 text-center">
+          Dados armazenados com segurança | Participação voluntária
+        </p>
+
+        <p className="text-sm sm:text-base text-gray-500 mt-4 text-center">
+          Apoio:
+        </p>
+             <div className="mt-4 flex justify-center">
+          <img
+            src={Logo}
+            alt="Logo de Apoio"
+            className="w-32 sm:w-48 h-auto object-contain"
+          />
+      
         </div>
+        
       </div>
     </div>
   );
 };
 
-export default Apresentacao;
+export default Index;
